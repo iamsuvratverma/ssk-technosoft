@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #ece9e9;
+    }
+
+    .main {
+        width: 500px;
+        height: auto;
+        border: 0px solid red;
+        background-color: #FFFFFF;
+        margin: auto;
+        margin-top: 60px;
+        box-shadow: 0 1px 5px rgb(0 0 0 / 25%);
+        padding-bottom: 20px;
+    }
+
+    .form_part h3 {
+        color: #757575;
+        font-family: sans-serif;
+        font-size: 35px;
+        border: 0px solid black;
+        text-align: center;
+        padding-top: 0px;
+
+    }
+
+    .form_part {
+        width: 80%;
+        margin: auto;
+        border: 0px solid RED;
+        padding-top: 20px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 15px;
+        font-family: sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        font-family: sans-serif;
+
+    }
+
+    .close {
+        width: 100%;
+        border: 0px solid red;
+        position: relative;
+
+    }
+
+    .btn_close {
+        background-color: #35477d;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        border: 0;
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn_close a img {
+        width: 15px;
+    }
+
+    .reg {
+        font-family: sans-serif;
+        display: inline-block;
+        width: 250px;
+        height: 40px;
+        margin: 20px;
+        position: relative;
+        overflow: hidden;
+        border: 3px solid #35477d;
+        transition: color 0.7s;
+        z-index: 1;
+        font-size: 20px;
+        border-radius: 6px;
+        font-weight: 500;
+        color: #35477d;
+        margin-left: 80px;
+        background-color: #ffffff;
+        padding-bottom: 31px;
+        padding-top: 10px;
+    }
+
+    .reg:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        height: 120px;
+        background-color: #35477d;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    .reg:hover {
+        color: #fff;
+
+    }
+
+    .reg:before {
+        top: 100%;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    .reg:hover:before {
+        top: -30px;
+        left: -30px;
+    }
+
+    /* css new for transition */
+    .form-user {
+        position: relative;
+        left: 5%;
+        margin: 20px 0 40px;
+        width: 200px;
+    }
+
+    .form-user input {
+        border: 0;
+        border-bottom: 1px #35477d solid;
+        width: 180%;
+        padding: 15px 0;
+        font-size: 18px;
+        outline: 0;
+    }
+
+
+    .form-user label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    .form-user label span {
+        display: inline-block;
+        font-size: 20px;
+        color: #35477d;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .form-user input:focus+label span {
+        color: #313da8;
+        transform: translateY(-17px);
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="close">
+            <button type="button" class="btn_close"><a href="index.html"><img src="image/close.svg" alt=""></a></button>
+        </div>
+        <div class="form_part">
+            <h3>Create Your Acount</h3>
+            <form action="">
+                <div class="form-user">
+                    <input type="value" required="">
+                    <label>
+                        <span class="time-delay" style="transition-delay:ms">U</span><span
+                            style="transition-delay:50ms">s</span><span style="transition-delay:100ms">e</span><span
+                            style="transition-delay:150ms">r</span><span style="transition-delay:200ms">N</span><span
+                            style="transition-delay:250ms">a</span><span style="transition-delay:300ms">m</span><span
+                            style="transition-delay:350ms">e</span>
+                    </label>
+                </div>
+                <div class="form-user">
+                    <input type="value" required="">
+                    <label>
+                        <span class="time-delay" style="transition-delay:ms">E</span><span
+                            style="transition-delay:50ms">n</span><span style="transition-delay:100ms">t</span><span
+                            style="transition-delay:150ms">e</span><span style="transition-delay:200ms">r</span>
+                        <span style="transition-delay:250ms">E</span><span style="transition-delay:300ms">m</span><span
+                            style="transition-delay:350ms">a</span><span style="transition-delay:400ms">i</span><span
+                            style="transition-delay:450ms">l</span>
+                    </label>
+                </div>
+                <div class="form-user">
+                    <input type="value" required="">
+                    <label>
+                        <span class="time-delay" style="transition-delay:ms">E</span><span
+                            style="transition-delay:50ms">n</span><span style="transition-delay:100ms">t</span><span
+                            style="transition-delay:150ms">e</span><span style="transition-delay:200ms">r</span>
+                        <span style="transition-delay:250ms">P</span><span style="transition-delay:300ms">a</span><span
+                            style="transition-delay:350ms">ss</span><span style="transition-delay:400ms">w</span><span
+                            style="transition-delay:450ms">o</span><span style="transition-delay:500ms">r</span><span
+                            style="transition-delay:550ms">d</span>
+                    </label>
+                </div>
+                <div class="form-user">
+                    <input type="value" required="">
+                    <label>
+                        <span class="time-delay" style="transition-delay:ms">C</span><span
+                            style="transition-delay:50ms">o</span><span style="transition-delay:100ms">n</span><span
+                            style="transition-delay:150ms">f</span><span style="transition-delay:200ms">i</span><span
+                            style="transition-delay:250ms">r</span><span style="transition-delay:300ms">m</span>
+                        <span style="transition-delay:350ms">P</span><span style="transition-delay:400ms">a</span><span
+                            style="transition-delay:450ms">ss</span><span style="transition-delay:500ms">w</span><span
+                            style="transition-delay:550ms">o</span><span style="transition-delay:600ms">r</span><span
+                            style="transition-delay:650ms">d</span>
+                    </label>
+                </div>
+                <button class="reg">Registration</button>
+                <a href="login.html">
+                    <p>Login Now</p>
+                </a>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
